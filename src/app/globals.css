@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.navbar .head {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .icons {
+  display: flex;
+  gap: 2rem;
+}
+
+.heroText {
+  width: 34rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 6px;
+  padding: 4rem;
+  line-height: 2rem;
+}
+
+.heroText h6 {
+  font-weight: bold;
+}
+
+.heroText h3 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #b88e2f;
+}
+
+.heroText .buyBtn {
+  background-color: #b88e2f;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  color: white;
+}
+.subText {
+  text-align: center;
+}
+.subText h3 {
+  color: #292826;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.imgArea{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+
+}
+.imgArea h6{
+  text-align: center;
+  font-weight: bold;
+}
+
+.cardsContainer{
+  
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);    
+    gap: 0.1rem; 
+    padding: 20px; 
+    justify-items: center;
+}
+
+
+.productBtn{
+  align-self: center;
+}
+
+.slideSection{
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);    
+  padding: 2rem; 
+  justify-items: center;
+}
+
+
+.shopsect h3, .shopPara{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+.shopsect .shopPara{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+}
+
+
+
+
+.showBlowBar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.showBlowBar .firstRow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.showBlowBar .secondRow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.footer input{
+  outline: none;
+
+}
+
+
+footer hr {
+  margin: auto;
+  margin-top: 15px;
+  width: 1000px;
+}
+
+footer .para p{
+  font-weight: 400;
+  position: absolute;
+  left: 13%;
+  padding: 2rem 0rem;
+}
+input{
+  all: unset;
+}
+/* Add these responsive breakpoints */
+@layer utilities {
+  @media (max-width: 640px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+/* Update existing classes with responsive styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.navbar .head {
+  display: flex;
+  gap: 1rem;
+  @media (max-width: 768px) {
+    display: none; /* Will be replaced by mobile menu */
+  }
+}
+
+.heroText {
+  width: 100%;
+  max-width: 34rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  padding: 2rem;
+  line-height: 1.5;
+  
+  @media (max-width: 768px) {
+    padding: 1rem;
+    width: 90%;
+  }
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  justify-items: center;
+}
+
+.slideSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 1rem;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
