@@ -3,7 +3,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 export default function Cart() {
   return (
-    <>
+    <div>
       <div className="relative">
         <Image src={'/Pictures/shophero.png'} width={1000} height={1000} alt="Picture of the author" />
         <div className="absolute top-[50%] left-[50%] flex justify-center flex-col items-center ">
@@ -89,6 +89,6 @@ export default function Cart() {
           <p>Dedicated support</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
