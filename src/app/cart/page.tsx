@@ -16,7 +16,7 @@ export default function Cart() {
         </div>
       </div>
 
-      <div className="">
+      <div>
         <div className=" producDetails flex justify-around items-center p-4 w-[60%] h-[4rem] bg-[#F9F1E7] ">
           <h2>Product</h2>
           <h2>Price</h2>
